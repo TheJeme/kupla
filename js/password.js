@@ -11,7 +11,7 @@ function applyHash() {
 
   var halflength = Math.ceil(secretPassword.length / 2);   
   var leftsecretpassword = secretPassword.slice(0,halflength);
-  var rightsecretpassword = secretPassword.slice(halflength,secretPassword.length - 10);
+  var rightsecretpassword = secretPassword.slice(halflength,secretPassword.length);
 
 
 
