@@ -1,0 +1,26 @@
+{
+  "name": "Kupla Password Generator",
+  "short_name": "Kupla",
+  "description": "Generate unique passwords from one master password and a service name without saving your data.",
+  "id": "/kupla.html",
+  "start_url": "/kupla.html",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#699acc",
+  "theme_color": "#699acc",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

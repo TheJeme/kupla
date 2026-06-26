@@ -192,11 +192,23 @@ const masterPasswordInput = document.getElementById('masterpassword');
 const serviceInput = document.getElementById('service');
 const passwordButton = document.getElementById('passwordbutton');
 const popLabel = document.getElementById('poplabel');
+let popLabelTimeoutId;
+
+function setPopLabel(message) {
+  window.clearTimeout(popLabelTimeoutId);
+  popLabel.textContent = message;
+
+  if (message) {
+    popLabelTimeoutId = window.setTimeout(() => {
+      popLabel.textContent = '';
+    }, 5000);
+  }
+}
 
 passwordButton.addEventListener('click', () => {
   if (masterPasswordInput.value.length > 0 && serviceInput.value.length > 0) {
     applyHash().catch(() => {
-      popLabel.textContent = 'Could not copy password to clipboard.';
+      setPopLabel('Could not copy password to clipboard.');
     });
   }
 });
@@ -212,5 +224,11 @@ async function applyHash() {
   const generatedPassword = `${leftSecretPassword}${rightSecretPassword.toUpperCase()}!`;
 
   await navigator.clipboard.writeText(generatedPassword);
-  popLabel.textContent = 'Password copied to clipboard!';
+  setPopLabel('Password copied to clipboard!');
+}
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
 }
