@@ -5,19 +5,31 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Kupla is an app that will help you make strong passwords and keep you secure!">
-  <meta name="keywords" content="kupla, password service, password hash"/>
+  <meta name="description" content="Use Kupla in your browser to generate unique passwords from one master password and a service name.">
   <meta name="author" content="Jeme">
-  <meta property="og:title" content="Kupla" />
-  <meta property="og:description" content="App that will help you make strong passwords and keep you secure" />
-  <meta property="og:image" content="img/icon.png" />
+  <meta name="application-name" content="Kupla">
+  <meta name="theme-color" content="#699acc">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Kupla Password Generator">
+  <meta property="og:description" content="Generate unique passwords in your browser without saving your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kupla.jeme.app/kupla.html">
+  <meta property="og:site_name" content="Kupla">
+  <meta property="og:image" content="https://kupla.jeme.app/img/icon.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="144">
+  <meta property="og:image:height" content="144">
+  <meta property="og:image:alt" content="Kupla app icon">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kupla Password Generator">
+  <meta name="twitter:description" content="Generate unique passwords in your browser without saving your data.">
+  <meta name="twitter:image" content="https://kupla.jeme.app/img/icon.png">
   <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
-  <meta property="og:image" content="img/icon.png">
-  <title>Kupla</title>
+  <link rel="canonical" href="https://kupla.jeme.app/kupla.html">
+  <title>Kupla Password Generator</title>
 
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="https://blogfonts.com/css/aWQ9MTY3OTgyJnN1Yj05ODImYz1mJnR0Zj1GcmFueHVydGVyVG90YWxseU1lZGl1bS1neHdqcC50dGYmbj1mcmFueHVydGVyLXRvdGFsbHktbWVkaXVtLTI/Franxurter Totally Medium.ttf" rel="stylesheet" type="text/css"/>
   <link href="css/new-age.min.css" rel="stylesheet">
 
@@ -26,14 +38,13 @@
 <body id="kuplaweb">
   <div class="container">
     <h1 class="mb-5 kuplaheader">Kupla</h1>
-    <input id="masterpassword" type="password" autofocus="true" placeholder="Master Password">
-    <input id="service" type="text" placeholder="Service">
-    <input id="passwordbutton" type="submit" value="✓">
-    <label id="poplabel"></label>
+    <input id="masterpassword" type="password" autofocus placeholder="Master Password" aria-label="Master password">
+    <input id="service" type="text" placeholder="Service" aria-label="Service">
+    <button id="passwordbutton" type="button" aria-label="Generate password">✓</button>
+    <p id="poplabel" role="status" aria-live="polite"></p>
   </div>
 
-  <script src="js/md5.js"></script>
-  <script src="js/password.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 

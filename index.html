@@ -8,20 +8,33 @@
     />
     <meta
       name="description"
-      content="Kupla is an app that will help you make strong passwords and keep you secure."
+      content="Kupla generates unique passwords from one master password and a service name without saving your data."
     />
-    <meta name="keywords" content="kupla, password service, password hash" />
     <meta name="author" content="Jeme" />
+    <meta name="application-name" content="Kupla" />
+    <meta name="theme-color" content="#699acc" />
+    <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Kupla" />
-    <meta property="og:description" content="App that will help you make strong passwords and keep you secure" />
-    <meta property="og:image" content="img/icon.png" />
+    <meta property="og:description" content="Generate unique passwords from one master password without saving your data." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://kupla.jeme.app/" />
+    <meta property="og:site_name" content="Kupla" />
+    <meta property="og:image" content="https://kupla.jeme.app/img/icon.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="144" />
+    <meta property="og:image:height" content="144" />
+    <meta property="og:image:alt" content="Kupla app icon" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Kupla" />
+    <meta name="twitter:description" content="Generate unique passwords from one master password without saving your data." />
+    <meta name="twitter:image" content="https://kupla.jeme.app/img/icon.png" />
     <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="canonical" href="https://kupla.jeme.app/" />
     <title>Kupla</title>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      href="css/simple-line-icons.css"
     />
     <link
       href="https://fonts.googleapis.com/css?family=Lato"
@@ -36,7 +49,6 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css" />
     <link href="css/new-age.min.css" rel="stylesheet" />
   </head>
 
@@ -51,9 +63,9 @@
                 keep you secure.
               </h1>
               <a
-                href="#download"
-                class="btn btn-outline btn-xl js-scroll-trigger"
-                >Use for Free</a
+                href="kupla.html"
+                class="btn btn-outline btn-xl"
+                >USE IN BROWSER</a
               >
             </div>
           </div>
@@ -72,22 +84,6 @@
       </div>
     </header>
 
-    <section class="download bg-primary text-center" id="download">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Discover what is Kupla!</h2>
-            <p class="mb-0">
-              Kupla is an app to generate secure passwords and protect your
-              privacy.
-            </p>
-            <br />
-            <a href="kupla.html" class="btn btn-dark m-1">Use in browser</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="features" id="features">
       <div class="container">
         <div class="section-heading text-center">
@@ -101,7 +97,7 @@
                   <div class="feature-item">
                     <i class="icon-lock text-primary"></i>
                     <h3>Secure safe</h3>
-                    <p class="text-muted">It does not save data anywhere!</p>
+                    <p class="text-muted">Does not save data anywhere</p>
                   </div>
                 </div>
                 <div class="col-lg-3">
@@ -110,7 +106,7 @@
                     <h3>Strong passwords</h3>
                     <p class="text-muted">
                       Generate uncrackable passwords that meets all the
-                      requirements for every service!
+                      requirements for every service
                     </p>
                   </div>
                 </div>
@@ -118,7 +114,7 @@
                   <div class="feature-item">
                     <i class="icon-present text-primary"></i>
                     <h3>Free to use</h3>
-                    <p class="text-muted">Free to use for any purpose!</p>
+                    <p class="text-muted">Free to use for any purpose</p>
                   </div>
                 </div>
                 <div class="col-lg-3">
@@ -126,8 +122,8 @@
                     <i class="icon-shield text-primary"></i>
                     <h3>Open source</h3>
                     <p class="text-muted">
-                      Kupla is MIT licensed so you can use it and change it as
-                      much you want!
+                      You can use it and change it as
+                      much as you want
                     </p>
                   </div>
                 </div>
@@ -143,7 +139,7 @@
         <div class="row">
           <div class="col-md-8 mx-auto">
             <h2 class="section-heading text-center">
-              Privacy is important <i class="fas fa-heart heart"></i>
+              Privacy is important <span class="heart" aria-hidden="true">&hearts;</span>
             </h2>
             <p class="px-3">
               We tend to forget our passwords easily and that's why we use the
@@ -179,9 +175,5 @@
       </div>
     </footer>
 
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/new-age.min.js"></script>
   </body>
 </html>
